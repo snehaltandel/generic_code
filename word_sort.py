@@ -15,6 +15,14 @@ def words(a):
     a.sort()
     return a
 
-print('Enter Words to Sort: ')
-word_input = words(input())
-print(word_input)
+def entry():
+    print('Enter Words Seperated by comma to Sort: ')
+    word_input = input()
+    return word_input
+
+def word_sort():
+    value = entry()
+    result = words(value)
+    print(result)
+
+word_sort()
